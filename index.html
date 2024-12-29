@@ -37,16 +37,16 @@
                     <li><a href="tel:+110001111111" class="contacts">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
-            <button type="button" class="burger-btn">
+            <button type="button" data-menu-open class="burger-btn">
                 <svg width="24" height="24">
                     <use href="./images/icons.svg#burger-btn"></use>
                 </svg>
             </button>
         </div>
         <!--mobile menu-->
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
             <div class="mobile-menu-container">
-                <button class="mobile-menu-close-btn" type="button">
+                <button class="mobile-menu-close-btn" data-menu-close type="button">
                     <svg class="icon" width="8" height="8">
                         <use href="./images/icons.svg#cross">
                         </use>
@@ -105,7 +105,7 @@
         <section class="section hero">
             <div class="container hero-container">
                 <h1 class="main-text">Effective Solutions for Your Business</h1>
-                <button type="button" class="button-order-service">Order Service</button>
+                <button type="button" data-modal-open class="button-order-service">Order Service</button>
             </div>
         </section>
         <!--Section1 Hero-->
@@ -547,9 +547,9 @@
     </footer>
     <!--footer-->
     <!--Modal window-->
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
         <div class="modal-window">
-            <button class="close-form-btn" type="button">
+            <button class="close-form-btn" data-modal-close type="button">
                 <svg class="icon" width="8" height="8">
                     <use href="./images/icons.svg#cross">
                     </use>
@@ -622,6 +622,8 @@
 
     </div>
     <!--Modal Window-->
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
